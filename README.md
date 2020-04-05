@@ -1,27 +1,26 @@
-# WeatherForecastProject
+# Motivação
+Através do [Lucas Montano](https://www.youtube.com/channel/UCyHOBY6IDZF9zOKJPou2Rgg), vi um projeto em Kotlin e decidi implementar em Angular para treinar minhas skills nesse framework.
+A ideia do projeto é através da API do Google Maps selecionar um local, onde o componente do mapa emite as coordenadas e o componente de tempo recebe essas coordenadas e imprime a temperatura, nome do lugar, sigla do país, temperatura mínima e máxima do dia.
+Aceito sugestões para melhorar o projeto.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.3.
+# Foi utilizado
+* [Node.js 12.14.0](https://nodejs.org/en/)
+* [Angular 9.0.3](https://angular.io/)
+* [Angular Google Maps](https://angular-maps.com/)
+* [Bootstrap](https://getbootstrap.com/)
+* [Console Google] (https://console.developers.google.com/) 
+* [OpenWeatherMap API] (https://openweathermap.org/)
 
-## Development server
+# API Keys necessárias para utilizar o projeto.
+em app.module.ts, na parte de importar módulos, vamos importar o módulo do Angular Google Maps:
+`AgmCoreModule.forRoot({
+      apiKey:"YOUR GOOGLE API KEY HERE"
+    })`
+em weather.service.ts, é necessário colocar a key do OpenWeatherMap na string MY_API_KEY:
+`api : string = "http://api.openweathermap.org/data/2.5/weather?";
+    MY_API_KEY: string = "YOUR OPENWEATHERMAP API KEY HERE";`
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+# Rodar o projeto
+ 1º Instalar o Node Module - > npm install 
+ 2º Instalar Angular Google Maps. Ler o Doc no link acima.
+ 3º Após intalar todas as depencências, executar `ng s` para rodar o projeto.
