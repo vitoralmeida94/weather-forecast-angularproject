@@ -21,6 +21,6 @@ em weather.service.ts, é necessário colocar a key do OpenWeatherMap na string 
     MY_API_KEY: string = "YOUR OPENWEATHERMAP API KEY HERE";`
 
 # Rodar o projeto
- 1º- Instalar o Node Module - > npm install 
- 2º-Instalar Angular Google Maps. Ler o Doc no link acima.
- 3º- Após intalar todas as depencências, executar `ng s` para rodar o projeto.
+ * Instalar o Node Module - > npm install 
+ * Instalar Angular Google Maps. Ler o Doc no link acima.
+ * Após intalar todas as depencências, executar `ng s` para rodar o projeto.
