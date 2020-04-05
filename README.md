@@ -8,8 +8,8 @@ Aceito sugestões para melhorar o projeto.
 * [Angular 9.0.3](https://angular.io/)
 * [Angular Google Maps](https://angular-maps.com/)
 * [Bootstrap](https://getbootstrap.com/)
-* [Console Google] (https://console.developers.google.com/) 
-* [OpenWeatherMap API] (https://openweathermap.org/)
+* [Console Google](https://console.developers.google.com/) 
+* [OpenWeatherMap API](https://openweathermap.org/)
 
 # API Keys necessárias para utilizar o projeto.
 em app.module.ts, na parte de importar módulos, vamos importar o módulo do Angular Google Maps:
@@ -21,6 +21,6 @@ em weather.service.ts, é necessário colocar a key do OpenWeatherMap na string 
     MY_API_KEY: string = "YOUR OPENWEATHERMAP API KEY HERE";`
 
 # Rodar o projeto
- 1º Instalar o Node Module - > npm install 
- 2º Instalar Angular Google Maps. Ler o Doc no link acima.
- 3º Após intalar todas as depencências, executar `ng s` para rodar o projeto.
+ 1º- Instalar o Node Module - > npm install 
+ 2º-Instalar Angular Google Maps. Ler o Doc no link acima.
+ 3º- Após intalar todas as depencências, executar `ng s` para rodar o projeto.
