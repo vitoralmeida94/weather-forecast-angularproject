@@ -1,0 +1,13 @@
+<div id="header">
+    <p>Please, zoom the map and select a city to see the weather <small>:)</small></p>
+</div>
+    <div class="col-sm-12" style="margin-left:25%">
+        <div class="col-sm-6">
+            <agm-map [latitude]="latitude" [longitude]="longitude" (mapClick)="onChoseLocation($event)">
+                <agm-marker  [latitude]="latitude" [longitude]="longitude" ></agm-marker>
+            </agm-map> 
+        </div>
+        <div class="col-sm-6" *ngIf="weatherRequest !== undefined" style="margin-top:10px">
+            <weathercomponent [coord]="weatherRequest"></weathercomponent>
+        </div>
+    </div>
