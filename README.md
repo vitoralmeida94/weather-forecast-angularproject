@@ -1,3 +1,4 @@
+ <img src="img/img1.PNG" width="350" height="350"> <img src="img/img2.PNG" width="350" height="350">
 # Motivação
 Através do [Lucas Montano](https://www.youtube.com/channel/UCyHOBY6IDZF9zOKJPou2Rgg), vi um projeto em Kotlin e decidi implementar em Angular para treinar minhas skills nesse framework.
 A ideia do projeto é através da API do Google Maps selecionar um local, onde o componente do mapa emite as coordenadas e o componente de tempo recebe essas coordenadas e imprime a temperatura, nome do lugar, sigla do país, temperatura mínima e máxima do dia.
